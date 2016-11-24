@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Smith&Nephew</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Nixie+One|Sansita+One" rel="stylesheet">
+</head>
+
+<body ng-controller="MainController as main">
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="app/img/logo.jpg" alt="Smith&Nephew">
+                    </a>
+                </div>
+                <div id="navbar2" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">My Approvals <span class="numbers">3</span></a></li>
+                        <li><a href="#">My Items<span class="numbers">6</span></a></li>
+                        <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="numbers">2</span></a></li>
+                        <li><a href="#"><i class="fa fa-globe" aria-hidden="true"><span class="eng">ENG<span></i></a></li>
+                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"> Welcome, John</i></a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <!--/.container-fluid -->
+        </nav>
+    </div>
+    <div class="container">
+        <div id="headerimage">
+            <nav id="searchbar">
+                <div id="navbar2" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li id="text"><a href="#">I Have a Request</a></li>
+                        <li id="text"><a href="#">I Have a Question</a></li>
+                        <li id="text"><a href="#">I Have an Issue</a></li>
+                        <li id="text"><a href="#">Contact Us</a></li>
+                        <li class="searchicon"><i class="fa fa-search" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+            </nav>
+            <h1 id="welcome">Welcome to</h1>
+            <h1 id="welcome2">Global Business Solutions</h1>
+            <div class="input-group searchfield">
+                <input type="text" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="services">
+                <div class="col-md-3 svc-bg">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <i class="fa fa-suitcase" aria-hidden="true"> IT SERVICES </i>
+                            <p>Browse the catalog for hardware and items you need.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 svc-bg">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <i class="fa fa-puzzle-piece" aria-hidden="true"> HR SERVICES </i>
+                            <p>Browse the catalog for software and items you need.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 svc-bg">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <i class="fa fa-male" aria-hidden="true"> PROCUREMENT SERVICES </i>
+                            <p>Contact support to make a request, or report a problem.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div>
+                        <div class="myRequests">
+                            <h5><b>MY REQUESTS</b></h5>
+                        </div>
+                        <p><b>IPhone 6s</b></p>
+                        <p id="fontfix"><i>rq00291 - 6 days ago</i></p>
+                        <p><b>Macbook pro - 15inch</b></p>
+                        <p id="fontfix"><i>rq00212 - 8 days ago</i></p>
+                        <button class="btn btn-default test">View More</button>
+                    </div>
+                </div>
+                <div class="col-md-9 container">
+                    <div ng-repeat="news in main.news">
+                        <div class="myRequests">
+                            <h5>{{news.latestNews}}</h5>
+                        </div>
+                        <p class="latestnews"><b>{{news.title}}</b></p>
+                        <p>{{news.date}}</p>
+                        <p>{{news.description}}</p>
+                        <button class="btn btn-default">READ MORE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <div class="myRequests">
+                        <h5><b>DO YOU NEED HELP?</b></h5>
+                    </div>
+                    <i class="fa fa-phone" aria-hidden="true"><b> 1(800)245-2981 </b></i>
+                    <p id="support"><i>24/7 phone support</i></p>
+                </div>
+                <div class="myRequests">
+                    <h5><b>CURRENT STATUS</b></h5>
+                </div>
+                <i class="fa fa-check-circle-o" aria-hidden="true"> No System Is Reporting An Issue.</i>
+                <p id="text">More Info</p>
+            </div>
+        </div>
+        <div class="chatoption">
+            <a class="feedback">Feedback</a>
+            <a class="chat">Live Chat</a>
+        </div>
+    </div>
+    </div>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="app/app.module.js"></script>
+    <script src="app/info/main.controller.js"></script>
+</body>
+
+</html>

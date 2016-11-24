@@ -1,0 +1,247 @@
+/*Top Navagation, header image, surrounding text*/
+
+body {
+    background-color: #F1F2F4;
+}
+
+.navbar-brand img {
+    height: 45px;
+    padding-left: 40px;
+}
+
+.navbar {
+    background-color: #fff;
+    border-style: none;
+    border-top: solid #FF6800;
+    border-bottom: 0.1px solid lightgrey;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    margin-bottom: 0px;
+}
+
+#headerimage {
+    background: url("../app/img/background.jpg") repeat-y 35.4167% 0;
+    background-size: cover;
+    padding-bottom: 200px;
+}
+
+#searchbar {
+    background: white;
+    opacity: 0.7;
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+#text {
+    font-size: 15px;
+    padding-right: 40px;
+    color: black !important;
+}
+
+.searchicon {
+    text-align: center;
+    float: right;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+#welcome {
+    padding-top: 25px;
+    text-align: center;
+    font-family: 'Nixie One', cursive;
+}
+
+#welcome2 {
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.searchfield {
+    margin: auto;
+    width: 70%;
+}
+
+
+/*All services offered*/
+
+.services {
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+.fa-suitcase {
+    font-size: 20px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    text-align: center;
+    padding-left: 35px;
+}
+
+.fa-puzzle-piece {
+    font-size: 20px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    text-align: center;
+    padding-left: 35px;
+}
+
+.fa-male {
+    font-size: 20px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.myRequests {
+    border-bottom: solid #FF6800;
+}
+
+.btn {
+    margin-bottom: 15px;
+}
+
+.fa-phone {
+    padding-top: 14px;
+    font-size: 18px;
+}
+
+.fa-check-circle-o {
+    font-size: 17px;
+    color: green;
+    padding-top: 10px;
+}
+
+.col-md-9 {
+    background-color: white;
+    padding-top: 30px;
+}
+
+.svc-bg {
+    height: 195px;
+    border-width: 1px;
+    border-style: none;
+    padding: 1% 2%;
+    background: white;
+}
+
+
+
+/*Bottom chat buttons*/
+
+.chat {
+    float: right;
+    background-color: #FF6800;
+    width: 100px;
+    padding-top: 3px;
+    color: white;
+    text-align: center;
+    padding-bottom: 2px;
+    font-size: 15px;
+}
+
+.feedback {
+    float: right;
+    background-color: black;
+    width: 150px;
+    padding-top: 3px;
+    color: white;
+    text-align: center;
+    padding-bottom: 2px;
+    font-size: 15px;
+}
+
+
+/*Simple font coloring and alignment issues*/
+
+#fontfix {
+    line-height: 0px;
+    padding-bottom: 15px;
+    color: lightgrey;
+}
+
+.test {
+    margin-bottom: 30px;
+}
+
+#support {
+    padding-bottom: 80px;
+}
+
+button {
+    font-family: 'Sansita One', cursive;
+}
+
+a {
+    color: black;
+}
+
+.numbers {
+    border-radius: 100%;
+    display: inline-block;
+    padding: 0 0 0 6px;
+    background: lightgrey;
+    color: #FF6800;
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+a:focus {
+    border-bottom: solid #FF6800;
+    color: #FF6800;
+}
+
+.eng {
+    color: #ff6800;
+    padding-left: 5px;
+}
+
+
+/*News feed with dynamic data*/
+
+.latestnews {
+    padding-top: 10px;
+}
+
+
+/*Media Queries*/
+
+@media only screen and (max-width: 992px) {
+    #text {
+        padding-right: 20px;
+    }
+      .svc-bg {
+        height: 130px;
+        border-width: 1px;
+        margin: 10px;
+        border-style: none;
+        background: white;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .fa-puzzle-piece {
+        font-size: 20px;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        text-align: center;
+        padding-left: 10px;
+    }
+    .fa-suitcase {
+        font-size: 20px;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        text-align: center;
+        padding-left: 20px;
+    }
+
+
+    .fa-male {
+        font-size: 20px;
+        padding-bottom: 1px;
+        padding-top: 10px;
+        text-align: center;
+    }
+}
+}
